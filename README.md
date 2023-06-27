@@ -2,6 +2,7 @@
 # Curso Completo de JavaScript
 
 ![Javascript image](https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png)
+<br>
 Bem-vindo ao repositório do Curso Completo de JavaScript! Este repositório foi criado por mim, um estudante entusiasta, com o objetivo de aprimorar meus conhecimentos em JavaScript e também para servir como um guia de referência enquanto trabalho em projetos com JavaScript.
 
 ## Sobre o Curso
