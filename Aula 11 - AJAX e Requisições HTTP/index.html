@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Requisição AJAX</title>
+</head>
+<body>
+  <script>
+    function makeRequest() {
+      let request = new XMLHttpRequest();
+
+      // Configurando a requisição
+      request.open("GET", "https://servicodados.ibge.gov.br/api/v1/localidades/distritos", true);
+
+      // Definindo a função de callback para tratar a resposta
+      request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+          let data = JSON.parse(request.responseText);
+          console.log("Dados da resposta:", data);
+        } else {
+          console.error("Erro na requisição:", request.status);
+        }
+      };
+
+      // Enviando a requisição
+      request.send();
+    }
+
+    // Chamando a função para fazer a requisição quando a página é carregada
+    window.onload = makeRequest;
+  </script>
+</body>
+</html>
